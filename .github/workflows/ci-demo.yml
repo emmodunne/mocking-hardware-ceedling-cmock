@@ -32,7 +32,9 @@ jobs:
       with:
         ruby-version: ${{ matrix.ruby-version }}
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-    - name: Run tests
-    - run: gem install ceedling
-    - run: cd ${{ github.workspace }}
-    - run: ceedling test:all
+    - name: Install ceedling
+      run: gem install ceedling
+    - name: Change into repo directory
+      run: cd ${{ github.workspace }}
+    - name: Run unit tests
+      run: ceedling test:all
