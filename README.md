@@ -11,7 +11,7 @@ Rake is required for executing the tests. It's generally installed as a part of 
 
 ## Running the Tests
 
-Run the tests with: `rake test:all`
+Run the tests with: `ceedling test:all`
 
 ## Source
 
@@ -20,6 +20,11 @@ The source files are in the `src` folder. There is one module named `tempSensor`
 ## Tests
 
 The tempSensor module is tested with the `test/test_tempSensor.c` file.
+
+## GitLab Actions
+See the Actions tab to see unit tests being run in CI pipeline:
+https://github.com/emmodunne/mocking-hardware-ceedling-cmock/actions
+
 
 ## Vagrant 
 
